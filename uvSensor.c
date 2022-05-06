@@ -2,7 +2,7 @@
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 int UVOUT = A0; 
-int REF_3V3 = A1; 
+int REF_3V3 = A1 ; 
  
 void setup()
 {

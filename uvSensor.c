@@ -18,19 +18,19 @@ void setup()
  
 void loop()
 {
-  int uvLevel = averageAnalogRead(UVOUT);
-  int refLevel = averageAnalogRead(REF_3V3);
+  int uvLvl = averageAnalogRead(UVOUT);
+  int refLvl = averageAnalogRead(REF_3V3);
   
   //Use the 3.3V power pin as a reference to get a very accurate output value from sensor
-  float outputVoltage = 3.3 / refLevel * uvLevel;
+  float outputVoltage = 3.3 / refLvl * uvLvl;
   
   float uvIntensity = mapfloat(outputVoltage, 0.99, 2.8, 0.0, 15.0); //Convert the voltage to a UV intensity level
  
   Serial.print("output: ");
-  Serial.print(refLevel);
+  Serial.print(refLvl);
  
   Serial.print("ML8511 output: ");
-  Serial.print(uvLevel);
+  Serial.print(uvLvl);
  
   Serial.print(" / ML8511 voltage: ");
   Serial.print(outputVoltage);

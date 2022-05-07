@@ -20,14 +20,12 @@ void setup() {
 
   Serial.println("Servo motor angle 0 deg");
 
-  delay(2000);
- 
-    
+  delay(2000);    
 }
 
 void loop() {
-  
-  
+  bool flag =true;
+do{
   if (rec.decode(&results)) 
      {
       rotate(1);// move the motor to 0 deg
@@ -35,9 +33,12 @@ void loop() {
       else 
         {
          rotate(0); // move the motor to 180 deg
-        }  
-       
         } 
+  }
+ while(flag);
+}
+       
+         
     
 
 
@@ -49,7 +50,7 @@ void rotate(int i){
   }
   else{
      Serial.println("servo motor angle 0 deg");
-    motor_angle = 0;
+    motor_angle =-180 ;
     servo1.write(motor_angle);
   }
-  }
+}

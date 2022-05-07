@@ -21,7 +21,7 @@ void setup() {
   Serial.println("Servo motor angle 0 deg");
 
   delay(2000);
-  attachInterrupt(digitalPinToInterrupt(IRpin), rotate, CHANGE);
+  //tachInterrupt(IRpin, rotate, CHANGE);
     
 }
 
@@ -52,4 +52,4 @@ void rotate(int i){
     motor_angle = 0;
     servo1.write(motor_angle);
   }
-}
+  }

@@ -43,7 +43,7 @@ void loop()
   lcd.print(" mW/cm^2");
   Serial.println();
   
-  delay(200);
+  delay(200 );
 }
  
 

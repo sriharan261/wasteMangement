@@ -34,7 +34,7 @@ void loop()
   Serial.print(" / ML8511 voltage: ");
   Serial.print(outputVoltage);
  
-  Serial.print(" / UV Intensity (mW/cm^2): ");
+  Serial.print(" / UV Intensity (mW/cm^2):  ");
   Serial.print(uvIntensity);
   lcd.clear();
   lcd.print("UV Ray Intensity");

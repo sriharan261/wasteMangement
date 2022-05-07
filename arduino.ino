@@ -21,7 +21,7 @@ void setup() {
   Serial.println("Servo motor angle 0 deg");
 
   delay(2000);
-  //tachInterrupt(IRpin, rotate, CHANGE);
+ 
     
 }
 

@@ -5,6 +5,7 @@ ABOUT PROJECT:
 
 PREREQUISITES:
      Arduino Uno,
+     IR diode,
      IR Sensor,
      Semi-circular metallic sheet,
      Servo motor,

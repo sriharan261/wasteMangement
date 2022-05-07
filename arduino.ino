@@ -50,7 +50,7 @@ void rotate(int i){
   }
   else{
      Serial.println("servo motor angle 0 deg");
-    motor_angle =-0 ;
+    motor_angle =0 ;
     servo1.write(motor_angle);
   }
 }

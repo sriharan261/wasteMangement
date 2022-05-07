@@ -4,12 +4,12 @@ ABOUT PROJECT:
      plastic.
 
 PREREQUISITES:
-     Arduino Uno
-     IR Sensor
-     Semi-circular metallic sheet
-     Servo motor
-     Encoder Cable
-     Motor Cable
+     Arduino Uno,
+     IR Sensor,
+     Semi-circular metallic sheet,
+     Servo motor,
+     Encoder Cable,
+     Motor Cable.
 
 WORKING:
      When the waste material is thrown in the bin, it passes through the IR transmitter and receiver system. The transmitter transmits IR rays which hit the object.
